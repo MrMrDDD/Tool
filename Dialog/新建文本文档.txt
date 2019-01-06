@@ -1,0 +1,10 @@
+    private void initdialog() {
+        TimerDialog timerDialog=new TimerDialog(this);
+        Window dialogwindow=timerDialog.getWindow();
+        dialogwindow.setGravity(Gravity.BOTTOM);
+        WindowManager.LayoutParams attributes = dialogwindow.getAttributes();
+        attributes.y=0;
+        attributes.width=WindowManager.LayoutParams.MATCH_PARENT;
+        dialogwindow.setAttributes(attributes);
+        timerDialog.show();
+    }
